@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Registeration_form</title>
+        <link rel="stylesheet" href="layout_regform.css">
+    </head>
+
+    <body>
+        <form action="action_page.php">
+            <div class="container">
+                <div class="heading">
+                    <h1>Register</h1>
+                    <p>Please fill in this form to create an account.</p>
+      
+                </div>
+                <hr>
+          
+              <label for="email"><b>Academic Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              <label for="ID" style="font-weight: bold;">Student ID</label>  
+              <input type="text" placeholder="Enter ID" name="ID" id="ID" required  >
+              
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+              
+              <a href="successful_registeration.html"> 
+                <input type="button" class="registerbtn" value="Register" >
+              </a>
+             
+            </div>
+          
+            <div class="container_signin">
+              <p style="color:#2e4696;">Already have an account? <a href="login.html">Sign in</a>.</p>
+            </div>
+          </form>
+          
+    </body>
+</html>

@@ -1,0 +1,304 @@
+<!doctype html>
+<meta charset="UTF-8"/>
+<html>
+ <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+   <title>Courses table</title>
+ </head>
+ <body>
+    <style>
+                h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #2e4696;
+        color:#fff;
+        padding: 10px 0px;
+        font-family: Arial, Helvetica, sans-serif ;
+        }
+#header1 {
+	height: 100px;
+	background: #2e4696;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 20%;
+	float: left;
+	line-height: 50px;
+    padding-top: 21px;
+}
+.logo a {
+    margin-top: 30px;
+	text-decoration: none;
+	font-size: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#fff;
+	letter-spacing: 3px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+nav {
+	float: right;
+	line-height: 100px;
+	
+}
+nav a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color:#fff;
+}
+.wrapper nav a:hover{
+	color:#2e4696;
+	border: solid 3px #fff;
+	padding: 2px;
+	background-color:#fff;
+	border-radius: 30px;
+	border-width: 10px;
+    }
+/* ------------------------------------------------------- */
+    body {
+        padding: 0px;
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #tab1 {
+        position:absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        width: 1300px;
+        height: 800px;
+        margin-top: 900px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #header {
+        background-color: #2e4696;
+        color: #fff;
+    }
+    
+    #h11 {
+            height: 80px;
+	background: #2e4696;
+	width: 100%;
+	position: relative;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0px;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    a:hover
+    {
+        color: #fff;
+        font-family:cursive;
+    }
+    #td1
+    {
+        color: #2e4696;
+        text-align: center;
+        height: 90px;
+	    width: 90%;
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        border: 2px solid #bdc3c7;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    #td1:hover
+    {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #bdc3c7;
+    }
+    #td2
+    {
+        color: #2e4696;
+        text-align: center;
+        height: 90px;
+	    width: 90%;
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        border: 2px solid #bdc3c7;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    #td2:hover
+    {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #bdc3c7;
+    }
+    #td4
+    {
+        color: #2e4696;
+        text-align: center;
+        height: 90px;
+	    width: 90%;
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        border: 2px solid #bdc3c7;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    #td4:hover
+    {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #bdc3c7;
+    }
+    #td5
+    {
+        color: #2e4696;
+        text-align: center;
+        height: 90px;
+	    width: 90%;
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        border: 2px solid #bdc3c7;
+        text-decoration: none;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    #td5:hover
+    {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid #bdc3c7;
+    }
+
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 100%;
+        }
+    }
+</style>
+<div id="header1">
+    <div class="wrapper">
+         <div class="logo">
+            <a href="#">FCAI-HU</a>
+        </div>
+      <nav>
+        <a href="layout.html">home</a> <a href="table.htm" target="_self">Schedules</a> <a href="HomeMapPage.html" target="_blank">maps</a><a href="contact us.htm" target="_blank">Contact Us</a>
+      </nav>  
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+    <h1 id="h11" style="font-size: 50px;">Courses Table</h1>
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 50px;">This table displays some of the courses taught in the faculty of Computer and Artificial Intelligence:</p>
+    <table id="tab1">
+    <tr id="header">
+     <th>Course's title</th>
+     <th>Doctor's name</th>
+     <th>number of students</th>
+    </tr>
+    <tr>
+        <td>Introduction to CS</td>
+        <td>Amr ghoneim</td>
+        <td>1230</td>
+    </tr>
+    <tr>
+        <td>data structures</td>
+        <td>mohamed kamel</td>
+        <td>715</td>
+    </tr>
+    <tr>
+        <td>algorithms</td>
+        <td>mohamed elsaid</td>
+        <td>1163</td>
+    </tr>
+    <tr>
+        <td>Artificial intelligence</td>
+        <td>ahmed salah</td>
+        <td>468</td>
+    </tr>
+    </table>
+    <br>
+<p style="margin-top: 1230px; font-family: Arial, Helvetica, sans-serif; font-size: 50px;">If you want to know more about these courses check these links out :</p>
+<table>
+    </tr>
+    <tr>
+        <a href="intro.html" target="_blank" id="td1">Introduction to CS</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="datastrusher page/index.html" target="_blank" id="td2">data structures</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="algorithis page/index.html" target="_blank" id="td4">algorithms</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="AI.htm" id="td5" target="_blank">Artificial intelligence</a>
+        <br>
+        <br>
+        <br>
+        <br>
+    </tr>
+    <tr>
+        
+    </tr>
+    <tr>
+
+    </tr>
+    </table>
+    <table>
+        <tr>
+ 
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+<br>
+<br>
+<br>
+ </body>
